@@ -1,337 +1,70 @@
 [
   {
-    "line": 4,
+    "line": 5,
     "elements": [
       {
-        "start_timestamp": "2020-12-05T10:17:35.839Z",
-        "line": 15,
+        "start_timestamp": "2020-12-05T18:06:00.385Z",
+        "line": 7,
         "name": "Check login is successful with valid credentials",
         "description": "",
-        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;2",
+        "id": "check-login-functionality;check-login-is-successful-with-valid-credentials",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5768000000,
+              "duration": 1000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Browser is open",
+            "line": 8,
+            "name": "User is in the Login page",
             "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.browser_is_open()"
+              "location": "StepsForHooks.HookDemoSteps.user_is_in_the_Login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1626000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User is in Login Page",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_is_in_Login_Page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 159000000,
               "status": "passed"
             },
             "line": 9,
-            "name": "User enters Janielle and 12345",
+            "name": "User enters username and password",
             "match": {
-              "arguments": [
-                {
-                  "val": "Janielle",
-                  "offset": 12
-                },
-                {
-                  "val": "12345",
-                  "offset": 25
-                }
-              ],
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_enters_username_and_password(java.lang.String,java.lang.String)"
+              "location": "StepsForHooks.HookDemoSteps.user_enters_username_and_password()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 43000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 10,
-            "name": "User clicks the Login button",
+            "name": "click the Login button",
             "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_clicks_the_Login_button()"
+              "location": "StepsForHooks.HookDemoSteps.click_the_Login_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 740000000,
               "status": "passed"
             },
             "line": 11,
             "name": "User is navigated to Home page",
             "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_is_navigated_to_Home_page()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-05T10:17:44.229Z",
-        "line": 16,
-        "name": "Check login is successful with valid credentials",
-        "description": "",
-        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5153000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Browser is open",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.browser_is_open()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1492000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User is in Login Page",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_is_in_Login_Page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 103000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User enters Joy and 12345",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Joy",
-                  "offset": 12
-                },
-                {
-                  "val": "12345",
-                  "offset": 20
-                }
-              ],
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_enters_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 45000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User clicks the Login button",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_clicks_the_Login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 667000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User is navigated to Home page",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_is_navigated_to_Home_page()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-05T10:17:51.692Z",
-        "line": 17,
-        "name": "Check login is successful with valid credentials",
-        "description": "",
-        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5141000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Browser is open",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.browser_is_open()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1604000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User is in Login Page",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_is_in_Login_Page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 103000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User enters Reina and 12345",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Reina",
-                  "offset": 12
-                },
-                {
-                  "val": "12345",
-                  "offset": 22
-                }
-              ],
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_enters_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 42000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User clicks the Login button",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_clicks_the_Login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 668000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User is navigated to Home page",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_is_navigated_to_Home_page()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-05T10:17:59.253Z",
-        "line": 18,
-        "name": "Check login is successful with valid credentials",
-        "description": "",
-        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5162000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Browser is open",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.browser_is_open()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1528000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User is in Login Page",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_is_in_Login_Page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 128000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User enters Mariela and 12345",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Mariela",
-                  "offset": 12
-                },
-                {
-                  "val": "12345",
-                  "offset": 24
-                }
-              ],
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_enters_username_and_password(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 45000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User clicks the Login button",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_clicks_the_Login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 687000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User is navigated to Home page",
-            "match": {
-              "location": "StepDefinitions.LoginDemoSteps_PF.user_is_navigated_to_Home_page()"
+              "location": "StepsForHooks.HookDemoSteps.user_is_navigated_to_Home_page()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Test Login Functionality",
+    "name": "Check Login Functionality",
     "description": "",
-    "id": "test-login-functionality",
+    "id": "check-login-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/Features/LoginDemo.feature",
+    "uri": "file:src/test/resources/HooksDemo/HooksDemo.feature",
     "tags": []
   }
 ]

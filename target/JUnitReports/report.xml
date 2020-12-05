@@ -1,34 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="31.171">
-<testcase classname="Test Login Functionality" name="Check login is successful with valid credentials" time="8.385">
-<system-out><![CDATA[Given Browser is open.......................................................passed
-And User is in Login Page...................................................passed
-When User enters Janielle and 12345.........................................passed
-And User clicks the Login button............................................passed
-Then User is navigated to Home page.........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test Login Functionality" name="Check login is successful with valid credentials 2" time="7.462">
-<system-out><![CDATA[Given Browser is open.......................................................passed
-And User is in Login Page...................................................passed
-When User enters Joy and 12345..............................................passed
-And User clicks the Login button............................................passed
-Then User is navigated to Home page.........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test Login Functionality" name="Check login is successful with valid credentials 3" time="7.56">
-<system-out><![CDATA[Given Browser is open.......................................................passed
-And User is in Login Page...................................................passed
-When User enters Reina and 12345............................................passed
-And User clicks the Login button............................................passed
-Then User is navigated to Home page.........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Test Login Functionality" name="Check login is successful with valid credentials 4" time="7.553">
-<system-out><![CDATA[Given Browser is open.......................................................passed
-And User is in Login Page...................................................passed
-When User enters Mariela and 12345..........................................passed
-And User clicks the Login button............................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.306">
+<testcase classname="Check Login Functionality" name="Check login is successful with valid credentials" time="0.054">
+<system-out><![CDATA[Given User is in the Login page.............................................passed
+When User enters username and password......................................passed
+And click the Login button..................................................passed
 Then User is navigated to Home page.........................................passed
 ]]></system-out>
 </testcase>
