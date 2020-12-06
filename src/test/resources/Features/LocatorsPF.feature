@@ -14,6 +14,6 @@ Feature: Locators Validation Functionality
 
     Examples: 
       | email            | password |
-      | test01@gmail.com | 1$Pass08 |
-      | test02@gmail.com | 2$Pass08 |
-      | test03@gmail.com | 3$Pass08 |
+      | test01@gmail.com | 1$Pass^08JJ |
+      | test02@gmail.com | 2$Pass^08RM |
+      | test03@gmail.com | 3$Pass^08JJ |

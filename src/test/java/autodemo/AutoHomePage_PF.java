@@ -9,7 +9,7 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 public class AutoHomePage_PF {
 	
-	@FindBy(xpath = "//a[contains(text(), 'My Account')]/@href")
+	@FindBy(xpath = "//li[@id='menu-item-50']")
 	WebElement menuMyAccount; 
 	
 	@FindBy(xpath = "//input[@id='reg_email']")
@@ -18,7 +18,7 @@ public class AutoHomePage_PF {
 	@FindBy(xpath = "//input[@id='reg_password']")
 	WebElement regPassword;
 	
-	@FindBy(xpath = "//input[@value='Register']")
+	@FindBy(xpath = "//div[@id='customer_login']/div[2]/form[@method='post']//input[@name='register']")
 	WebElement buttonRegister;
 	
 	WebDriver driver;

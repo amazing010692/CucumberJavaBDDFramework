@@ -6,14 +6,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.en.*;
 
 public class HookDemoSteps {
 	
 	WebDriver driver = null;
 	
-	@Before
+	@Before(value = "@smoke", order = 1)
 	public void browserSetup() {
 		System.out.println(" === I am inside browserSetup === ");
 		System.out.println("Inside Step - Browser is open");
@@ -27,10 +29,31 @@ public class HookDemoSteps {
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 	}
 	
-	@After
+	@Before(order = 0)
+	public void setUp2() {
+		System.out.println(" === I am inside setUp2 === \n");
+	}
+	
+	@After(order = 1)
 	public void tearDown() {
+		System.out.println(" === I am inside tearDown === ");
 		driver.close();
 		driver.quit();
+	}
+	
+	@After(order = 2)
+	public void tearDown2() {
+		System.out.println(" === I am inside tearDown2 === \n");
+	}
+	
+	@BeforeStep
+	public void beforeSteps() {
+		System.out.println(" === beforeSteps === ");
+	}
+	
+	@AfterStep
+	public void afterSteps() {
+		System.out.println(" === afterSteps === ");
 	}
 	
 	@Given("User is in the Login page")
