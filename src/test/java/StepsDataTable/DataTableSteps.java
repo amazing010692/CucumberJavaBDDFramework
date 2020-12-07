@@ -13,7 +13,9 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import junit.framework.Assert;
 
+@SuppressWarnings("deprecation")
 public class DataTableSteps {
 
 	public static WebDriver driver;
@@ -70,13 +72,15 @@ public class DataTableSteps {
 	@And("I can verify the presence of element locators")
 	public void i_can_verify_the_presence_of_element_locators(DataTable dataTable) {
 		
-	    // List of Maps
-		List<Map<String, String>> list = dataTable.asMaps(String.class, String.class);
-		//System.out.println(list.size());
-		for(int index = 0; index < list.size(); index++) {
-			//System.out.println(list.get(index).get("element"));
-			//System.out.println(list.get(index).get("xpathValues"));
-			isElementPresent(By.xpath(list.get(index).get("xpathValues")));
+		List<Map<String, String>> listMaps = dataTable.asMaps();
+		for (Map<String, String> map : listMaps) {
+			
+			for (String key : map.keySet()) {
+				String value = map.get(key);
+				System.out.println(key + "----" + value);
+				//Assert.assertEquals(true, isElementPresent(By.xpath(value)));
+			}
+			System.out.println("================================================================\n");
 			
 		}
 

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="22.571">
-<testcase classname="Locators Validation Functionality" name="Validate the presence of element locators in the Product page" time="22.339">
-<failure message="invalid selector: Unable to locate an element with the xpath expression &quot;//a[contains(text(),'Description')]&quot; because of the following error:&#10;TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.&#10;  (Session info: chrome=87.0.4280.88)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'JANIELLE-ACER-N', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\hello\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: e9debaea45ab56397be53f702ac243a6&#10;*** Element info: {Using=xpath, value=&quot;//a[contains(text(),'Description')]&quot;}" type="org.openqa.selenium.InvalidSelectorException"><![CDATA[Given I am in the Home page of an Automation Practice Site..................passed
-When I click Selenium Ruby..................................................passed
-Then I will be navigated to the Product page................................passed
-And I can verify the presence of element locators...........................failed
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="155.428">
+<testcase classname="Locators Validation Functionality" name="Check if locators are present in the My Account page" time="25.11">
+<failure message="timeout: Timed out receiving message from renderer: 18.802&#10;  (Session info: chrome=87.0.4280.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'JANIELLE-ACER-N', ip: '10.0.87.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\hello\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: fdf086ae8cf26b06daaa803a794ee09c" type="org.openqa.selenium.TimeoutException"><![CDATA[Given Chrome Browser is open................................................passed
+And I am in the Home page of the Automation Practice Site...................failed
+When I click the My Account menu............................................skipped
+And I enter test01@gmail.com and 1$Pass^08JJ in the Registration section....skipped
+And I click the Register button.............................................skipped
+Then I will be redirected to the Welcome page...............................skipped
+And I can verify the presence of locators...................................skipped
 
 StackTrace:
-org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression "//a[contains(text(),'Description')]" because of the following error:
-TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 18.802
   (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JANIELLE-ACER-N', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+System info: host: 'JANIELLE-ACER-N', ip: '10.0.87.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\hello\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56616}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e9debaea45ab56397be53f702ac243a6
-*** Element info: {Using=xpath, value="//a[contains(text(),'Description')]"}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\hello\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50843}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fdf086ae8cf26b06daaa803a794ee09c
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -27,13 +27,134 @@ Session ID: e9debaea45ab56397be53f702ac243a6
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-	at StepsDataTable.DataTableSteps.isElementPresent(DataTableSteps.java:29)
-	at StepsDataTable.DataTableSteps.i_can_verify_the_presence_of_element_locators(DataTableSteps.java:79)
-	at ✽.I can verify the presence of element locators(file:///C:/Users/hello/Documents/JAVA_TESTS/CucumberJavaBDDFramework/src/test/resources/Features/DataTable.feature:10)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at StepDefinitions.LocatorsSteps_PF.i_am_in_the_Home_page_of_the_Automation_Practice_Site(LocatorsSteps_PF.java:35)
+	at ✽.I am in the Home page of the Automation Practice Site(file:///C:/Users/hello/Documents/JAVA_TESTS/CucumberJavaBDDFramework/src/test/resources/Features/LocatorsPF.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="Locators Validation Functionality" name="Check if locators are present in the My Account page 2" time="105.084">
+<failure message="Timed out after 30 seconds. Unable to locate the element" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Chrome Browser is open................................................passed
+And I am in the Home page of the Automation Practice Site...................passed
+When I click the My Account menu............................................passed
+And I enter test02@gmail.com and 2$Pass^08RM in the Registration section....passed
+And I click the Register button.............................................passed
+Then I will be redirected to the Welcome page...............................passed
+And I can verify the presence of locators...................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Timed out after 30 seconds. Unable to locate the element
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:99)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at autodemo.AutoResultsPage_PF.verifyLinkDownloads(AutoResultsPage_PF.java:61)
+	at StepDefinitions.LocatorsSteps_PF.i_can_verify_the_presence_of_locators(LocatorsSteps_PF.java:70)
+	at ✽.I can verify the presence of locators(file:///C:/Users/hello/Documents/JAVA_TESTS/CucumberJavaBDDFramework/src/test/resources/Features/LocatorsPF.feature:13)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(), 'Downloads')]/@href"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'JANIELLE-ACER-N', ip: '10.0.87.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\hello\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50914}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 67ee8b8e69eca716bc5c22eb92aca88b
+*** Element info: {Using=xpath, value=//a[contains(text(), 'Downloads')]/@href}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:39)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:165)
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:72)
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:95)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)
+	at autodemo.AutoResultsPage_PF.verifyLinkDownloads(AutoResultsPage_PF.java:61)
+	at StepDefinitions.LocatorsSteps_PF.i_can_verify_the_presence_of_locators(LocatorsSteps_PF.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]></failure>
+</testcase>
+<testcase classname="Locators Validation Functionality" name="Check if locators are present in the My Account page 3" time="25.22">
+<failure message="timeout: Timed out receiving message from renderer: 18.990&#10;  (Session info: chrome=87.0.4280.88)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'JANIELLE-ACER-N', ip: '10.0.87.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\hello\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51073}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: e5d86ef93e5eda22286f253e14dcfe24" type="org.openqa.selenium.TimeoutException"><![CDATA[Given Chrome Browser is open................................................passed
+And I am in the Home page of the Automation Practice Site...................failed
+When I click the My Account menu............................................skipped
+And I enter test03@gmail.com and 3$Pass^08JJ in the Registration section....skipped
+And I click the Register button.............................................skipped
+Then I will be redirected to the Welcome page...............................skipped
+And I can verify the presence of locators...................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 18.990
+  (Session info: chrome=87.0.4280.88)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'JANIELLE-ACER-N', ip: '10.0.87.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\hello\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51073}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e5d86ef93e5eda22286f253e14dcfe24
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+	at StepDefinitions.LocatorsSteps_PF.i_am_in_the_Home_page_of_the_Automation_Practice_Site(LocatorsSteps_PF.java:35)
+	at ✽.I am in the Home page of the Automation Practice Site(file:///C:/Users/hello/Documents/JAVA_TESTS/CucumberJavaBDDFramework/src/test/resources/Features/LocatorsPF.feature:8)
 ]]></failure>
 </testcase>
 </testsuite>
