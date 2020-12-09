@@ -1,18 +1,18 @@
-package StepDefinitions;
+package Runner_Hooks;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Features/BackgroundDemo/BackgroundDemo.feature", 
-				glue = { "StepsBackground" }, 
+@CucumberOptions(features = "src/test/resources/HooksDemo/HooksDemo.feature", 
+				glue = { "StepsForHooks" }, 
 				monochrome = true, 
 				plugin = {
 						"pretty", "junit:target/JUnitReports/report.xml", "json:target/JSONreports/report.json",
-						"html:target/HTMLreports", "json:target/cucumber.json" }, 
+						"html:target/HTMLreports" }, 
 				tags = "")
 
-public class TestRunnerBackgroundDemo {
+public class TestRunnerForHooks {
 
 }

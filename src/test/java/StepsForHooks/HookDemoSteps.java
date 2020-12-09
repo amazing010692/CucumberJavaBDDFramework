@@ -34,16 +34,16 @@ public class HookDemoSteps {
 		System.out.println(" === I am inside setUp2 === \n");
 	}
 	
-	@After(order = 1)
+	@After(order = 2)
 	public void tearDown() {
 		System.out.println(" === I am inside tearDown === ");
-		driver.close();
-		driver.quit();
+
 	}
 	
-	@After(order = 2)
+	@After(order = 1)
 	public void tearDown2() {
 		System.out.println(" === I am inside tearDown2 === \n");
+		driver.quit();
 	}
 	
 	@BeforeStep

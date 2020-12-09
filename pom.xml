@@ -60,6 +60,8 @@
 
 	</dependencies>
 
+	<!--Maven cucumber reporting (Run as Maven clean and verify) | target/cucumber-report-html -->
+	
 	<build>
 		<plugins>
 			<plugin>
